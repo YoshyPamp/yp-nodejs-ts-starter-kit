@@ -1,6 +1,6 @@
 # NodeJS, Express, Typescript starter kit.
 
-This is a just another starter kit for NodeJS API focused applications.
+This is just another starter kit for NodeJS API focused applications.
 
 ## Description
 
@@ -14,7 +14,9 @@ This project does not have any special dependencies, it was tested with node v14
 
 ### Installing
 
+```
 npm install
+```
 
 ### Executing program
 
@@ -24,6 +26,11 @@ npm start
 
 The npm start will run default test, tslint and build all *.ts files into the dist folder.
 
+If you want to use this app with docker, just build the image with the dockerfile and create container with docker run or docker-compose.
+```
+docker build -t [project-name]:[tag] .
+docker run -d --name [project-name] -p 3000:8080 [project-name]:[tag]
+```
 ## Help
 
 Any problem please refer to my github account.
